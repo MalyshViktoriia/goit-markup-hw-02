@@ -1,0 +1,86 @@
+:root {
+    --primary-text-color: #212121;
+    --main-title-text-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --optional-text-color: #757575;
+}
+
+.page {
+    background-color: #ffffff;
+    color: var(--primary-text-color);
+    font-family: 'Roboto', 'Raleway', sans-serif;
+}
+.nav-site-name {
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.list {
+    list-style: none;
+}
+
+/* Site nav */
+
+.logo {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    color: var(--primary-text-color);
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--accent-color);
+}
+
+.contacts-link {
+    color: var(--primary-text-color);
+}
+.contacts-link:hover, .contacts-link:focus {
+    color: var(--accent-color);
+}
+
+
+/* Hero */
+/* Section */
+.feature-list .title {
+    color: #212121;
+}
+
+
+/*
+.nav > .nav-links > .nav-studio {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+.hero {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+}
+.title {
+  font-size: 44px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-button {
+  background-color: #2196f3;
+  color: #ffffff;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  margin-top: 350px;
+  margin-bottom: 200px;
+}
