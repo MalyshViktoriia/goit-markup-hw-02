@@ -3,9 +3,11 @@
   --logo-color: #000000;
   --main-title-text-color: #ffffff;
   --background-color: #ffffff;
+  --background-color-secondary: #2f303a;
   --accent-color: #2196f3;
   --optional-text-color: #757575;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --command-bgc: #f5f4fa;
 }
 
 .page {
@@ -67,40 +69,111 @@
   color: var(--accent-color);
 }
 
-/* Hero */
-/* Section */
-.feature-list .title {
-  color: #212121;
-}
-
-.nav > .nav-links > .nav-studio {
-  text-decoration: none;
-  color: #212121;
-  font-weight: 700;
-  font-size: 14px;
-}
-
+/* --------------------Hero-------------------- */
 .hero {
-  background-color: #2f303a;
-  width: 1600px;
-  height: 600px;
+  background-color: var(--background-color-secondary);
 }
+
 .title {
+  font-weight: 900;
   font-size: 44px;
-  color: #ffffff;
+  line-height: calc(44 / 60);
   text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-text-color);
 }
 
 .hero-button {
-  background-color: #2196f3;
-  color: #ffffff;
-  width: 200px;
-  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--main-title-text-color);
   text-align: center;
-
   font-size: 16px;
   font-weight: bold;
+  line-height: calc(16 / 30);
+}
+.hero-button:hover {
+  cursor: pointer;
+}
 
-  margin-top: 350px;
-  margin-bottom: 200px;
+/* -----------------Section-work-------------------- */
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(36 / 42);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.feature-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(14 / 16);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+.feature-list .paragraph {
+  font-size: 14px;
+  line-height: calc(14 / 24);
+  letter-spacing: 0.03em;
+  color: var(--optional-text-color);
+}
+
+/* ----------------Section-command-------------- */
+.title-command {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(16 / 19);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.command-paragraph {
+  font-size: 16px;
+  line-height: calc(16 / 19);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--optional-text-color);
+}
+
+.section-command {
+  background-color: var(--command-bgc);
+}
+/* ------------------Footer---------------- */
+.footer {
+  background-color: var(--background-color-secondary);
+}
+.logo-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(26 / 31);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--main-title-text-color);
+}
+
+.address-location {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(14 / 24);
+  letter-spacing: 0.03em;
+  color: var(--main-title-text-color);
+}
+.address-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(14 / 24);
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+}
+
+.address-link:hover {
+  color: var(--main-title-text-color);
 }
