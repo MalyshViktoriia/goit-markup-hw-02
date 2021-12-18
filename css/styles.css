@@ -1,13 +1,14 @@
+/* ----------------STUDIO-------------------- */
 :root {
   --primary-text-color: #212121;
   --logo-color: #000000;
-  --main-title-text-color: #ffffff;
   --background-color: #ffffff;
   --background-color-secondary: #2f303a;
   --accent-color: #2196f3;
   --optional-text-color: #757575;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
-  --command-bgc: #f5f4fa;
+  --buttons-bgc: #f5f4fa;
+  --background-color-hover: #188ce8;
 }
 
 .page {
@@ -81,19 +82,22 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--main-title-text-color);
+  color: var(--background-color);
 }
 
 .hero-button {
+  font-family: inherit;
   background-color: var(--accent-color);
-  color: var(--main-title-text-color);
+  color: var(--background-color);
   text-align: center;
   font-size: 16px;
   font-weight: bold;
   line-height: calc(16 / 30);
+  border-radius: 4px;
 }
 .hero-button:hover {
   cursor: pointer;
+  background-color: var(--background-color-hover);
 }
 
 /* -----------------Section-work-------------------- */
@@ -140,7 +144,7 @@
 }
 
 .section-command {
-  background-color: var(--command-bgc);
+  background-color: var(--buttons-bgc);
 }
 /* ------------------Footer---------------- */
 .footer {
@@ -154,7 +158,7 @@
   line-height: calc(26 / 31);
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--main-title-text-color);
+  color: var(--background-color);
 }
 
 .address-location {
@@ -163,7 +167,7 @@
   font-size: 14px;
   line-height: calc(14 / 24);
   letter-spacing: 0.03em;
-  color: var(--main-title-text-color);
+  color: var(--background-color);
 }
 .address-link {
   font-style: normal;
@@ -174,6 +178,48 @@
   color: var(--footer-contacts-color);
 }
 
-.address-link:hover {
-  color: var(--main-title-text-color);
+.address-link:hover,
+.address-link:focus {
+  color: var(--background-color);
+}
+
+/* ----------------------PORTFOLIO------------------------ */
+/* ----------------------Buttons-------------------- */
+.portfolio-button {
+  font-family: inherit;
+  background-color: var(--buttons-bgc);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(16 / 26) x;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  cursor: pointer;
+}
+
+.portfolio-current-button {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+/* -----------------------Gallery---------------------- */
+.portfolio-gallery {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.portfolio-paragraph {
+  font-size: 16px;
+  line-height: calc(16 / 30);
+  letter-spacing: 0.03em;
+  color: var(--optional-text-color);
 }
