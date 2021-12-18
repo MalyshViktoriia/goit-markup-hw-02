@@ -1,64 +1,84 @@
 :root {
-    --primary-text-color: #212121;
-    --main-title-text-color: #FFFFFF;
-    --accent-color: #2196F3;
-    --optional-text-color: #757575;
+  --primary-text-color: #212121;
+  --logo-color: #000000;
+  --main-title-text-color: #ffffff;
+  --background-color: #ffffff;
+  --accent-color: #2196f3;
+  --optional-text-color: #757575;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 .page {
-    background-color: #ffffff;
-    color: var(--primary-text-color);
-    font-family: 'Roboto', 'Raleway', sans-serif;
-}
-.nav-site-name {
-    color: black;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 26px;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
-/* Site nav */
+.link {
+  text-decoration: none;
+}
+
+/* --------------------------Site nav--------------------------- */
+.nav-site-name {
+  color: var(--logo-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(26 / 31);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
 
 .logo {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .nav-link {
-    color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(14 / 16);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
-.nav-link:hover, .nav-link:focus {
-    color: var(--accent-color);
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
 }
 
 .contacts-link {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(14 / 16);
+  letter-spacing: 0.02em;
+  color: var(--optional-text-color);
 }
-.contacts-link:hover, .contacts-link:focus {
-    color: var(--accent-color);
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
 
 /* Hero */
 /* Section */
 .feature-list .title {
-    color: #212121;
+  color: #212121;
 }
 
-
-/*
 .nav > .nav-links > .nav-studio {
   text-decoration: none;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
 }
-
 
 .hero {
   background-color: #2f303a;
