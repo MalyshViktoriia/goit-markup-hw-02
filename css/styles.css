@@ -45,7 +45,7 @@
   font-size: 14px;
   line-height: calc(14 / 16);
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: inherit;
 }
 
 .nav-link:hover,
@@ -54,7 +54,6 @@
 }
 
 .contacts-link {
-  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: calc(14 / 16);
@@ -107,7 +106,6 @@
   line-height: calc(36 / 42);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .feature-title {
@@ -116,7 +114,6 @@
   line-height: calc(14 / 16);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
 }
 .feature-list .paragraph {
   font-size: 14px;
@@ -132,7 +129,6 @@
   line-height: calc(16 / 19);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .command-paragraph {
@@ -194,7 +190,6 @@
   line-height: calc(16 / 26) x;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .portfolio-button:hover,
@@ -214,7 +209,6 @@
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color);
 }
 
 .portfolio-paragraph {
