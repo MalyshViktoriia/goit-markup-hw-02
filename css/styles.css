@@ -12,9 +12,12 @@
 }
 
 .page {
-  background-color: var(--background-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--optional-text-color);
 }
 
 .list {
@@ -23,48 +26,46 @@
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* --------------------------Site nav--------------------------- */
-.nav-site-name {
-  color: var(--logo-color);
+.logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  text-decoration: none;
+  color: var(--accent-color);
 }
 
-.logo {
-  color: var(--accent-color);
+.logo-header {
+  color: var(--logo-color);
+}
+
+.nav-links {
+  color: var(--primary-text-color);
 }
 
 .nav-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: inherit;
 }
 
 .nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-
-.contacts-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(15 / 14);
-  letter-spacing: 0.02em;
-  color: var(--optional-text-color);
-}
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--accent-color);
-}
-
+.nav-link:focus,
 .current {
   color: var(--accent-color);
 }
@@ -74,7 +75,7 @@
   background-color: var(--background-color-secondary);
 }
 
-.title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -90,56 +91,44 @@
   color: var(--background-color);
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: calc(30 / 16);
   border-radius: 4px;
-}
-.hero-button:hover {
   cursor: pointer;
+  letter-spacing: 0.03em;
+}
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--background-color-hover);
 }
 
 /* -----------------Section-work-------------------- */
 .section-title {
-  font-weight: bold;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .feature-title {
-  font-weight: bold;
-  font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--primary-text-color);
 }
-.feature-list .paragraph {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: var(--optional-text-color);
-}
-
 /* ----------------Section-command-------------- */
-.title-command {
+.command-title {
   font-weight: 500;
+  color: var(--primary-text-color);
+}
+
+.command-paragraph,
+.command-title {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
-.command-paragraph {
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--optional-text-color);
-}
-
-.section-command {
+.command {
   background-color: var(--buttons-bgc);
 }
 /* ------------------Footer---------------- */
@@ -147,30 +136,17 @@
   background-color: var(--background-color-secondary);
 }
 .logo-footer {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  text-decoration: none;
   color: var(--background-color);
 }
 
-.address-location {
+.address {
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+}
+
+.address-location {
   color: var(--background-color);
 }
 .address-link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
 }
 
@@ -181,22 +157,22 @@
 
 /* ----------------------PORTFOLIO------------------------ */
 /* ----------------------Buttons-------------------- */
-.portfolio-button {
+.filter-button {
   font-family: inherit;
   background-color: var(--buttons-bgc);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(26 / 16) x;
+  line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.filter-button:hover,
+.filter-button:focus {
   background-color: var(--accent-color);
   color: var(--background-color);
-  cursor: pointer;
 }
 
 .portfolio-current-button {
@@ -209,11 +185,11 @@
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  color: var(--primary-text-color);
 }
 
-.portfolio-paragraph {
+.portfolio-text {
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
   color: var(--optional-text-color);
 }
